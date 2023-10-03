@@ -8,7 +8,33 @@ It is being used by hundreds of thousands of developers and even large companies
 
 By following this guide you will learn how to properly set up Tailwind CSS with Flowbite inside a Flask project and get started with building websites faster.
 
-## Requirements
+## Manual Build 
+
+> Install modules via `VENV`  
+
+```bash
+$ virtualenv env
+$ source env/bin/activate
+$ pip install -r requirements.txt
+```
+
+> Install Tailwind (separate terminal)
+
+```bash
+$ cd static
+$ yarn  
+$ npx tailwindcss -i ./src/input.css -o ./dist/css/output.css --watch           
+```
+
+> Start APP
+
+```
+$ flask run 
+```
+
+<br />
+
+## Full Help
 
 Follow the next steps in this tutorial to learn how to install a Flask project with Tailwind CSS and the Flowbite component library.
 
